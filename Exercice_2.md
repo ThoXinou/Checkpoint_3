@@ -44,9 +44,70 @@ Authentification par clés et désactivation de l'authentification par mot de pa
 
 ![2024-06-21 11_32_04-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/719b8f89-621f-4fea-a28a-ee820d1621d8)
 
+## Partie 3 : Analyse du stockage
+
+**Q.2.3.1**
+
+Types de fichiers montés : `ext2`, `lvm`, `ext4`, `swap`
+
+![2024-06-21 11_35_25-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/ee4503d6-0522-47ac-8703-56e7328b81c9)
+
+**Q.2.3.2**
+
+Type de stockage : RAID et LVM
+
+![2024-06-21 11_35_25-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/9d7bc308-ef47-4c08-b122-7583be4b9cfd)
 
 
+**Q.2.3.3**
 
+Ajout d'un disque de 8GO sur la VM
+
+Etat du raid dégradé : 
+
+![2024-06-21 11_39_37-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/0d8d2c16-2c67-4cca-a36c-ff6940cc2c14)
+
+Formatage du nouveau disque : 
+
+![2024-06-21 11_45_24-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/6b4dc985-863a-47a2-80b5-76a2b7b0e136)
+
+Ajourt du disque au RAID
+
+![2024-06-21 11_47_28-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/89092480-028d-45c2-ba1d-41b8f2ef2223)
+
+RAID re-synchronisé : 
+
+![2024-06-21 11_47_28-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/9f3fe4f4-6406-40ce-8552-f25e00ad4986)
+
+![2024-06-21 11_48_02-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/e7c4fd75-37fd-4718-b45f-596e9df9d802)
+
+**Q.2.3.4**
+
+Création d'un volume de 2G appellé `sauvegarde` : 
+
+![2024-06-21 12_05_44-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/c7e80c7c-3671-4e07-9146-15c901ed12e5)
+
+![2024-06-21 12_06_18-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/f394c7fb-2c6a-4d7e-a84c-29765b18b114)
+
+Formatage du nouveau vcolume en `ext4` : 
+
+![2024-06-21 12_13_13-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/2c234aa7-ccc0-4774-94ff-634a995788d7)
+
+Montage du LV dans le dossier `/var/lib/bareos/storage` : 
+
+![2024-06-21 12_13_42-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/70e9c5fe-036a-45be-bba4-b5545f9002a9)
+
+![2024-06-21 12_14_00-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/fd07f7e2-bfb8-4812-a66c-29e32ab4b877)
+
+Edition du ficier `/etc/fstab` pour le montage automatique au démarrage : 
+
+![2024-06-21 12_17_04-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/22b1ab96-7e14-4b1a-9f50-e1c6472f16aa)
+
+**Q.2.3.5**
+
+Taille disponible : 1.79 GO
+
+![2024-06-21 12_19_00-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/c9716cc8-4990-4f08-95d1-bda1be8c7a15)
 
 
 
