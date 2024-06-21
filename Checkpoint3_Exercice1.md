@@ -81,7 +81,7 @@ Pour aller plus loin, nous pouvons également définir une taille minimum de mot
 
 ## Partie 3 : Lecteurs réseaux
 
-**Q.1.3.1
+**Q.1.3.1**
 
 Avant de monter les lecteurs `E` et `F`, nous devons mettre en place le partage de ces deux disques, (Ci-dessous, ce qui a été fait pour `E`) : 
 
