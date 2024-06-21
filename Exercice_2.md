@@ -110,6 +110,16 @@ Taille disponible : 1.79 GO
 ![2024-06-21 12_19_00-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/c9716cc8-4990-4f08-95d1-bda1be8c7a15)
 
 
+## Partie 4 : Sauvegardes
+
+**Q.2.4.1**
+
+bareos-dir = Bareos Director, reponsable de tous les modules de Bareos
+bareos-sd = Bareos Storage Daemon, service dédié aux sauvegardes
+bareos-fd = Bareos File Daemon, collecte d'informations
+
+
+
 
 
 
