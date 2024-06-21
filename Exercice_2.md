@@ -118,9 +118,32 @@ bareos-dir = Bareos Director, reponsable de tous les modules de Bareos
 bareos-sd = Bareos Storage Daemon, service dédié aux sauvegardes
 bareos-fd = Bareos File Daemon, collecte d'informations
 
+## Partie 5 : Filtrage et analyse réseau
+
+**Q.2.5.1**
+
+![2024-06-21 12_51_10-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/f4ec5c08-9745-4925-aa46-fa9bbe6c921b)
+
+**Q.2.5.2**
+
+Port 22 autorisé, donc protocole SSH
+ICMP autorisé en IPv4 et IPv6, ce qui correspond au ping
+
+**Q.2.5.3**
+
+Principe de Deny All -> Toutes les autres communications sont interdites
+
+**Q.2.5.4**
+
+Il suffit d'ajouter les ports 9101 à 9103 de la manière suivante, à la suite de la table `inet_filter_table` : 
+```
+tcp dport 9101 accept
+tcp dport 9102 accept
+tcp dport 9103 accept
+```
 
 
+## Partie 6 : Analyse de logs
 
-
-
+**Q.2.6.1**
 
