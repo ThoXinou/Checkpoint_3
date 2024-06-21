@@ -147,3 +147,8 @@ tcp dport 9103 accept
 
 **Q.2.6.1**
 
+Pour vérifier les echecs de connexion, on éxécute la commande `jounrnalctl | grep authentication`
+
+![2024-06-21 13_05_21-Checkpoint3-SRVLX01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/b72a30b8-1522-496e-9ceb-8561158dca70)
+
+
