@@ -101,7 +101,7 @@ Une fois les deux lecteurs mappés, nous devrions avoir ça :
 
 ![2024-06-21 10_17_32-Checkpoint3-SRVWIN01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/5dcd17fc-9711-4232-a95a-be3acb6b1ba8)
 
-ATTENTION : Bien penser à appliques les GPO précédemment créées avant la commande `gpupdate /force` : 
+ATTENTION : Bien penser à appliquer les GPO précédemment créées avant la commande `gpupdate /force` : 
 
 ![2024-06-21 10_19_56-Checkpoint3-SRVWIN01  En fonction  - Oracle VM VirtualBox](https://github.com/ThoXinou/Checkpoint_3/assets/159007018/96d5d854-0504-45b5-ac5e-e5aceb718ced)
 
