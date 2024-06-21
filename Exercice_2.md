@@ -114,8 +114,8 @@ Taille disponible : 1.79 GO
 
 **Q.2.4.1**
 
-bareos-dir = Bareos Director, reponsable de tous les modules de Bareos
-bareos-sd = Bareos Storage Daemon, service dédié aux sauvegardes
+bareos-dir = Bareos Director, reponsable de tous les modules de Bareos  
+bareos-sd = Bareos Storage Daemon, service dédié aux sauvegardes  
 bareos-fd = Bareos File Daemon, collecte d'informations
 
 ## Partie 5 : Filtrage et analyse réseau
@@ -126,7 +126,7 @@ bareos-fd = Bareos File Daemon, collecte d'informations
 
 **Q.2.5.2**
 
-Port 22 autorisé, donc protocole SSH
+Port 22 autorisé, donc protocole SSH  
 ICMP autorisé en IPv4 et IPv6, ce qui correspond au ping
 
 **Q.2.5.3**
